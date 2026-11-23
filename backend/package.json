@@ -4,7 +4,8 @@
   "main": "src/serve.ts",
   "scripts": {
     "dev": "tsx src/serve.ts",
-    "start": "tsx src/serve.ts",
+    "start": "node scripts/setup-db.js && tsx src/serve.ts",
+    "db:setup": "node scripts/setup-db.js",
     "db:init": "node scripts/init-db.js"
   },
   "dependencies": {
